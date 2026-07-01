@@ -16,10 +16,5 @@ export default defineConfig({
     preset: "netlify",
   },
   vite: {
-    build: {
-      rollupOptions: {
-        external: [/^@tanstack\//],
-      },
-    },
   },
 });

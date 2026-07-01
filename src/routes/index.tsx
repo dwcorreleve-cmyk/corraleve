@@ -11,19 +11,28 @@ import { CTAButton, WhatsAppFloat, WHATSAPP_URL } from "@/components/WhatsAppBut
 import { Reveal } from "@/components/Reveal";
 import transformImg from "@/assets/transformation.jpg";
 import finishImg from "@/assets/finish-line.jpg";
-import deniImg from "@/assets/deni-about.jpg.asset.json";
-import logoAsset from "@/assets/corra-leve-logo-v2.png.asset.json";
-import logoLightAsset from "@/assets/corra-leve-logo-v2.png.asset.json";
-import deniRunner from "@/assets/deni-runner-clean.png.asset.json";
-import proof8 from "@/assets/proof-8.png.asset.json";
-import proof9 from "@/assets/proof-9.png.asset.json";
-import proof10 from "@/assets/proof-10.png.asset.json";
-import proof11 from "@/assets/proof-11.png.asset.json";
-import proof12 from "@/assets/proof-12.png.asset.json";
+import deniAboutImg from "@/assets/deni-about.png";
+const deniImg = { url: deniAboutImg };
+import logoImg from "@/assets/logo.png";
+const logoAsset = { url: logoImg };
+const logoLightAsset = { url: logoImg };
+import deniRunnerImg from "@/assets/deni-runner.png";
+const deniRunner = { url: deniRunnerImg };
+import proofNew1 from "@/assets/proof-new-1.png";
+import proofNew2 from "@/assets/proof-new-2.png";
+import proofNew3 from "@/assets/proof-new-3.png";
+import proofNew4 from "@/assets/proof-new-4.jpg";
+import proofNew5 from "@/assets/proof-new-5.jpg";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-const PROOF_PHOTOS = [proof11, proof12, proof8, proof9, proof10];
+const PROOF_PHOTOS = [
+  { url: proofNew1 },
+  { url: proofNew2 },
+  { url: proofNew3 },
+  { url: proofNew4 },
+  { url: proofNew5 }
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
